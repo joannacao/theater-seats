@@ -72,7 +72,7 @@ int main(){
 	return 0;
 }
 
-void displaySeatingChart(char arr[][30]){ //prints out seating chart by iterating through
+void displaySeatingChart(char arr[][30]){ //prints out seating chart by iterating throug	
 	printf("                      Seats\n"); //the rows
 	printf("          123456789012345678901234567890\n"); //labels the columns
 	for (int r = 1; r < 16; r++){
@@ -121,7 +121,7 @@ void seatStats(char arr[][30]){
 int rowSeatsLeft(char arr[][30], int row){
 	int rowSeats = 0;
 	for (int c = 0; c < 30; c++){
-		if (arr[row-1][c] == '*'){ //checks the indicated row for any available seats
+		if (arr[row][c] == '*'){ //checks the indicated row for any available seats
 			rowSeats++; //increments if it finds an available seats
 		}
 	}
